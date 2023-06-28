@@ -33,20 +33,15 @@ class Home extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Column(
-          children: [
-            Text(
-              "Hello Blay!",
-              textDirection: TextDirection.ltr, // first omit TD,
-              // and apply later
-              style: TextStyle(
-                fontSize: 40.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.greenAccent,
-              ),
-            ),
-            Image(image: AssetImage("sp-avatar")),
-          ],
+        child: Text(
+          "Hello Blay!",
+          textDirection: TextDirection.ltr, // first omit TD,
+          // and apply later
+          style: TextStyle(
+            fontSize: 40.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.greenAccent,
+          ),
         ),
       ),
       // Floating Button
@@ -56,6 +51,7 @@ class Home extends StatelessWidget {
         hoverColor: const Color.fromARGB(255, 5, 238, 12),
         child: const Icon(Icons.chat_rounded),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       // Botttom Nav Bar
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
