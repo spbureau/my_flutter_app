@@ -6,8 +6,11 @@ void main() {
   runApp(
     MaterialApp(
       title: "My Flutter App",
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      // theme: ThemeData.light(),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      // darkTheme: ThemeData.dark(),
       home: const Home(),
       debugShowCheckedModeBanner: false,
     ),
