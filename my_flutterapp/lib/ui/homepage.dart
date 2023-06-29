@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
           "Messenger",
           style: TextStyle(
             fontSize: 26.0,
+            fontFamily: "Courgette",
           ),
         ),
         // elevation: BorderSide.strokeAlignCenter,
@@ -35,7 +36,7 @@ class Home extends StatelessWidget {
       body: const Center(
         child: Text(
           "Hello Blay!",
-          textDirection: TextDirection.ltr, // first omit TD,
+          // textDirection: TextDirection.ltr, // first omit TD,
           // and apply later
           style: TextStyle(
             fontSize: 40.0,
@@ -45,12 +46,16 @@ class Home extends StatelessWidget {
         ),
       ),
       // Floating Button
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
         tooltip: "New Chat",
         hoverColor: const Color.fromARGB(255, 5, 238, 12),
-        child: const Icon(Icons.chat_rounded),
+        label: const Text("Chat"),
+        icon: const Icon(Icons.chat_rounded),
+        // child: const Icon(Icons.chat_rounded),
+        // child: const Row(),
       ),
+
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       // Botttom Nav Bar
       bottomNavigationBar: BottomNavigationBar(
@@ -76,9 +81,6 @@ class Home extends StatelessWidget {
   }
 }
 
-
-
-
 // bottomNavigationBar:
 //           BottomNavigationBar(items: const <BottomNavigationBarItem>[
 //         BottomNavigationBarItem(
@@ -94,4 +96,4 @@ class Home extends StatelessWidget {
 //           icon: Icon(Icons.settings),
 //           label: "Settings",
 //         ),
-//       ]),  
+//       ]),
